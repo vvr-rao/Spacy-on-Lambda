@@ -1,0 +1,21 @@
+service: my-service
+provider:
+  name: aws
+  timeout: 300
+  ecr:
+    images:
+      appimage:
+        path: ./
+functions:
+  get_entities:
+    image:
+      name: appimage
+    timeout: 300
+    memorySize: 1024
+    ephemeralStorageSize: 1024
+    provisionedConcurrency: 3
+    reservedConcurrency: 3
+    events:
+      - http:
+          path: qa # http path
+          method: post # http method
