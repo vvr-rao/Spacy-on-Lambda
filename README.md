@@ -2,12 +2,12 @@
 
 
 ## 
-Spacy model designed to be deployed on AWS Lambda. To install download serverless CLI. then run following commands (Linux)
+Spacy model containerized to be deployed as a REST API on AWS Lambda. To install download serverless CLI. then run following commands (Linux)
 1) serverless create -u https://github.com/vvr-rao/Spacy-on-Lambda -n lambda-fn
 2) cd lambda-fn
 3) serverless deploy (should provision Container in ECR, API Gateway,  Lambda with Provisioned Concorrency)
 
-To run, POST a message in below format:
+To run, POST a message to the generated endpoint in below format:
 {
     "data": "Nothing like New York in the winter."
 }
