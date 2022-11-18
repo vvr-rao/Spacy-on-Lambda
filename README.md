@@ -8,9 +8,10 @@ Spacy model containerized to be deployed as a REST API on AWS Lambda. To install
 3) serverless deploy (should provision Container in ECR, API Gateway,  Lambda with Provisioned Concorrency)
 
 To run, POST a message to the generated endpoint in below format:
-{
-    "data": "Nothing like New York in the winter."
-}
+
+    {
+        "data": "Nothing like New York in the winter."
+    }
 
 ##
 VERY IMPORTANT!! REMEMBER TO RUN THE BELOW!!! 
