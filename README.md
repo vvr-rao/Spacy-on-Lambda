@@ -20,5 +20,5 @@ VERY IMPORTANT!! REMEMBER TO RUN THE BELOW!!!
 
 ##
 Model Sizes
-en_core_web_sm: 13MB Size of en_core_web_md: 91MB Size of en_core_web_lg: 742MB
+en_core_web_sm: 13MB ; en_core_web_md: 91MB ; en_core_web_lg: 742MB
 
